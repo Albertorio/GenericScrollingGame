@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>zombie.png</file>
+        <file>sweetcar.png</file>
+        <file>spongebob.png</file>
+        <file>roadsand.png</file>
+        <file>roadnight.png</file>
+        <file>road2.png</file>
+        <file>road.png</file>
+        <file>racer5.png</file>
+        <file>racer4.png</file>
+        <file>racer3.png</file>
+        <file>racer2.png</file>
+        <file>racer.png</file>
+        <file>patrick.png</file>
+        <file>monster.png</file>
+        <file>it.png</file>
+        <file>hoyo.png</file>
+        <file>flag.png</file>
+        <file>cupcake.png</file>
+        <file>coolroad.png</file>
+        <file>cone.png</file>
+        <file>candyroad.png</file>
+        <file>batman.png</file>
+    </qresource>
+</RCC>
