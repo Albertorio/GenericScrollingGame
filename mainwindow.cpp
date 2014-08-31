@@ -74,7 +74,8 @@ MainWindow::~MainWindow()
 }
 
 ///
-///
+/// Starts the timer for the score and plays the game
+/// using the run function from the game class
 ///
 void MainWindow::on_playButton_clicked()
 {
@@ -84,17 +85,25 @@ void MainWindow::on_playButton_clicked()
     ui->playButton->setEnabled(false);
 }
 
-void MainWindow::score(){
-    if(game->playing == false){
+///
+/// Sets the score of the game which is based on the timer
+///
+void MainWindow::score()
+{
+    if(game->playing == false) ui->retryButton->setEnabled(true);
 
-        ui->retryButton->setEnabled(true);
-    }else{
-        ui->retryButton->setEnabled(false);
-    }
+    else ui->retryButton->setEnabled(false);
+
     QString num = QString::number(game->getScore());
+
     ui->label->setText(num);
 }
 
+///
+/// When the retry button is pressed, the timer is
+/// deleted and a new one is created also runs the
+/// new game function from the class game.
+///
 void MainWindow::on_retryButton_clicked()
 {
     game->newGame();
@@ -104,22 +113,36 @@ void MainWindow::on_retryButton_clicked()
     globalTimer->start(120);
 }
 
+///
+/// Moves the racer up and down when the up, down arrows
+/// are pressed
+///
 void MainWindow::keyPressEvent(QKeyEvent *event){
     game->keyPressEvent(event);
 }
 
+///
+/// Sets which race car the player is using
+///
 void MainWindow::on_comboBox_activated(const QString &arg1)
 {
     game->setRacecar(arg1.toStdString());
     repaint();
 }
 
+///
+/// Sets which track the player is racing on
+///
 void MainWindow::on_trackBox_activated(const QString &arg1)
 {
     //game->setTrack(arg1.toStdString());
     repaint();
 }
 
+///
+/// Sets the difficulty of the game and changes some
+/// boolean variables acoordingly
+///
 void MainWindow::on_difficultyBox_activated(const QString &arg1)
 {
 
