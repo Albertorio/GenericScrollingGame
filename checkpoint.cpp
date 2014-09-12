@@ -29,28 +29,28 @@ string checkpoint::getCheckpoint(){
 }
 
 ///
-/// Setter for the x coordinates of the checkpoint
+/// Setter for the X coordinates of the checkpoint
 ///
 void checkpoint::setXflag(int arg){
     x_flag = arg;
 }
 
 ///
-/// Setter for the y coordinates of the checkpoint
+/// Setter for the Y coordinates of the checkpoint
 ///
 void checkpoint::setYflag(int arg){
     y_flag = arg;
 }
 
 ///
-/// Getter for the x coordinates of the checkpoint
+/// Getter for the X coordinates of the checkpoint
 ///
 int checkpoint::getXflag(){
     return x_flag;
 }
 
 ///
-/// Getter for the y coordinates of the checkpoint
+/// Getter for the Y coordinates of the checkpoint
 ///
 int checkpoint::getYflag(){
     return y_flag;

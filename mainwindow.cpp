@@ -91,11 +91,10 @@ void MainWindow::on_playButton_clicked()
 void MainWindow::score()
 {
     if(game->playing == false) ui->retryButton->setEnabled(true);
-
+    
     else ui->retryButton->setEnabled(false);
-
+    
     QString num = QString::number(game->getScore());
-
     ui->label->setText(num);
 }
 

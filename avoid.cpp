@@ -16,27 +16,21 @@ avoid::avoid(QWidget *parent) :
 /// Setter for the obstacle picture
 ///
 void avoid::setObs(string arg){
-    if(arg == "cone"){
-        name = ":/images/cone.png";
-    }
-    else if (arg == "hole") {
-        name = ":/images/hoyo.png";
-    }
-    else if(arg == "monster"){
-        name = ":/images/monster.png";
-    }
-    else if(arg == "zombie"){
-        name = ":/images/zombie.png";
-    }
-    else if(arg == "it"){
-        name = ":/images/it.png";
-    }
-    else if(arg == "spongebob"){
-        name = ":/images/spongebob.png";
-    }
-    else if(arg == "patrick"){
-        name = ":/images/patrick.png";
-    }
+    
+    if(arg == "cone") name = ":/images/cone.png";
+    
+    else if (arg == "hole") name = ":/images/hoyo.png";
+    
+    else if(arg == "monster") name = ":/images/monster.png";
+    
+    else if(arg == "zombie") name = ":/images/zombie.png";
+    
+    else if(arg == "it") name = ":/images/it.png";
+    
+    else if(arg == "spongebob") name = ":/images/spongebob.png";
+    
+    else if(arg == "patrick") name = ":/images/patrick.png";
+    
 }
 
 ///
@@ -47,29 +41,31 @@ string avoid::getObs(){
 }
 
 ///
-/// Setter for the x coordinate
+/// Setter for the X coordinate
 ///
 void avoid::setXcone(int arg){
     x_cone = arg;
 }
 
 ///
-/// Setter for the y coordinate
+/// Setter for the Y coordinate
 ///
 void avoid::setYcone(int arg){
     y_cone = arg;
 }
 
 ///
-/// Getter for the x coordinate
+/// Getter for the X coordinate
 ///
 int avoid::getXcone(){
     return x_cone;
 }
 
 ///
-/// Getter for the y coordinate
+/// Getter for the Y coordinate
 ///
 int avoid::getYcone(){
     return y_cone;
 }
+
+

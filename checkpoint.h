@@ -6,6 +6,12 @@
 
 using namespace std;
 
+///
+/// Class that has the attributes of the flags, such as:
+/// * X, y coordinates
+/// * Name
+/// * Setters and Getters
+///
 class checkpoint : public QWidget
 {
     Q_OBJECT
@@ -13,18 +19,14 @@ public:
     explicit checkpoint(QWidget *parent = 0);
     int y_flag;
     int x_flag;
-    string name;
-    void setCheckpoint(string);
-    string getCheckpoint();
-    void setXflag(int);
     int getXflag();
-    void setYflag(int);
     int getYflag();
-
-signals:
-
-public slots:
-
+    void setXflag(int);
+    void setCheckpoint(string);
+    void setYflag(int);
+    string name;
+    string getCheckpoint();
+    
 };
 
 #endif // CHECKPOINT_H

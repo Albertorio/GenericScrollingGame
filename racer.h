@@ -6,6 +6,12 @@
 
 using namespace std;
 
+///
+/// Class that has the attributes of the racecar such as:
+/// * Y Coordinate
+/// * Name
+/// * Setters and Getters 
+///
 class racer : public QWidget
 {
     Q_OBJECT

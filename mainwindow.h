@@ -40,7 +40,7 @@ private:
     play *game;
     Ui::MainWindow *ui;
     QTimer *globalTimer;
-    QGraphicsScene *scene;
+    QGraphicsScene*scene;
 };
 
 #endif // MAINWINDOW_H
